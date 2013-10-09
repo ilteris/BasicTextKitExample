@@ -10,8 +10,9 @@
 #import "IKTextStorage.h"
 
 @interface IKViewController ()
-@property (weak, nonatomic) IBOutlet UITextView *textView;
+
 @property (nonatomic, strong) IKTextStorage *textStorage;
+@property (weak, nonatomic) IBOutlet UITextView *textView;
 
 @end
 
