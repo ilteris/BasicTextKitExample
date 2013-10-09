@@ -21,7 +21,8 @@
 		A2A8F5241804EDC500F178C6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A8F5061804EDC500F178C6 /* UIKit.framework */; };
 		A2A8F52C1804EDC500F178C6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A2A8F52A1804EDC500F178C6 /* InfoPlist.strings */; };
 		A2A8F52E1804EDC500F178C6 /* TextKitExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A2A8F52D1804EDC500F178C6 /* TextKitExampleTests.m */; };
-		A2A8F5391804EE8E00F178C6 /* IKTextStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = A2A8F5381804EE8E00F178C6 /* IKTextStorage.m */; };
+		A2A8F53C1804F09800F178C6 /* IKLayoutManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A2A8F53B1804F09800F178C6 /* IKLayoutManager.m */; };
+		A2A8F53F1804F0B200F178C6 /* IKTextStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = A2A8F53E1804F0B200F178C6 /* IKTextStorage.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,8 +55,10 @@
 		A2A8F5291804EDC500F178C6 /* TextKitExampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TextKitExampleTests-Info.plist"; sourceTree = "<group>"; };
 		A2A8F52B1804EDC500F178C6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A2A8F52D1804EDC500F178C6 /* TextKitExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextKitExampleTests.m; sourceTree = "<group>"; };
-		A2A8F5371804EE8E00F178C6 /* IKTextStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IKTextStorage.h; sourceTree = "<group>"; };
-		A2A8F5381804EE8E00F178C6 /* IKTextStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IKTextStorage.m; sourceTree = "<group>"; };
+		A2A8F53A1804F09800F178C6 /* IKLayoutManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IKLayoutManager.h; sourceTree = "<group>"; };
+		A2A8F53B1804F09800F178C6 /* IKLayoutManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IKLayoutManager.m; sourceTree = "<group>"; };
+		A2A8F53D1804F0B200F178C6 /* IKTextStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IKTextStorage.h; sourceTree = "<group>"; };
+		A2A8F53E1804F0B200F178C6 /* IKTextStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IKTextStorage.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,8 +88,6 @@
 		A2A8F4F61804EDC500F178C6 = {
 			isa = PBXGroup;
 			children = (
-				A2A8F5371804EE8E00F178C6 /* IKTextStorage.h */,
-				A2A8F5381804EE8E00F178C6 /* IKTextStorage.m */,
 				A2A8F5081804EDC500F178C6 /* TextKitExample */,
 				A2A8F5271804EDC500F178C6 /* TextKitExampleTests */,
 				A2A8F5011804EDC500F178C6 /* Frameworks */,
@@ -117,6 +118,10 @@
 		A2A8F5081804EDC500F178C6 /* TextKitExample */ = {
 			isa = PBXGroup;
 			children = (
+				A2A8F53D1804F0B200F178C6 /* IKTextStorage.h */,
+				A2A8F53E1804F0B200F178C6 /* IKTextStorage.m */,
+				A2A8F53A1804F09800F178C6 /* IKLayoutManager.h */,
+				A2A8F53B1804F09800F178C6 /* IKLayoutManager.m */,
 				A2A8F5111804EDC500F178C6 /* IKAppDelegate.h */,
 				A2A8F5121804EDC500F178C6 /* IKAppDelegate.m */,
 				A2A8F5141804EDC500F178C6 /* Main.storyboard */,
@@ -255,10 +260,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A2A8F5391804EE8E00F178C6 /* IKTextStorage.m in Sources */,
 				A2A8F5131804EDC500F178C6 /* IKAppDelegate.m in Sources */,
 				A2A8F50F1804EDC500F178C6 /* main.m in Sources */,
 				A2A8F5191804EDC500F178C6 /* IKViewController.m in Sources */,
+				A2A8F53F1804F0B200F178C6 /* IKTextStorage.m in Sources */,
+				A2A8F53C1804F09800F178C6 /* IKLayoutManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,17 +7,31 @@
 //
 
 #import "IKViewController.h"
+#import "IKTextStorage.h"
 
 @interface IKViewController ()
+@property (weak, nonatomic) IBOutlet UITextView *textView;
+@property (nonatomic, strong) IKTextStorage *textStorage;
 
 @end
 
 @implementation IKViewController
 
+
+- (void)awakeFromNib
+{
+    [super awakeFromNib];
+}
+
+
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    self.textStorage = [[IKTextStorage alloc] init];
+    
 }
 
 - (void)didReceiveMemoryWarning

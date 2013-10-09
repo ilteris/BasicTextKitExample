@@ -1,5 +1,5 @@
 //
-//  IKViewController.h
+//  IKLayoutManager.h
 //  TextKitExample
 //
 //  Created by ilteris on 10/8/13.
@@ -8,9 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@class IKTextStorage;
-
-
-@interface IKViewController : UIViewController
+@interface IKLayoutManager : NSLayoutManager
+extern NSString * const IKSpecialHighlightAttributeName;
 
 @end
