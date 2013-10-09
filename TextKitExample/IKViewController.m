@@ -44,7 +44,7 @@
     [_textStorage beginEditing];
     [_textStorage setAttributedString:self.textView.attributedText];
     
-    NSRange range = NSMakeRange(320, 16); 
+    NSRange range = NSMakeRange(320, 16);
     
     NSDictionary *attributes = @{IKSpecialHighlightAttributeName : [UIColor redColor]};
     
@@ -57,7 +57,6 @@
     UITapGestureRecognizer *singleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleSingleTap:)];
     
     [_textView addGestureRecognizer:singleTap];
-    
     
 }
 
