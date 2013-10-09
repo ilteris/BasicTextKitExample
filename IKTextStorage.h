@@ -8,6 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
+
+NSString *const defaultTokenName;
+
+
 @interface IKTextStorage : NSTextStorage
+@property (nonatomic, copy) NSDictionary *tokens; // a dictionary, keyed by text snippets, with attributes we want to add
 
 @end
